@@ -1,0 +1,27 @@
+/***** Responsive table *****/
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+tr:nth-of-type(odd) {}
+
+.table-responsive th { 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+ 
+  /*background-color: #000;
+  color: #fff;*/
+}
+
+td, th { 
+  padding: 6px; 
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 1px 0 #FFF;
+}
+
+.table-responsive .form-control{ width: 40px; }
+.table-responsive .cost { width: 60px; }
+.table-responsive .chrName { width: 80px; }
+

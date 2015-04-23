@@ -1,0 +1,100 @@
+/* typography */
+
+@font-face {
+  font-family: "Essays 1743";
+  src: url("../fonts/Essays1743.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Essays 1743";
+  font-weight: bold;
+  src: url("../fonts/Essays1743-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Essays 1743";
+  font-style: italic;
+  src: url("../fonts/Essays1743-italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Essays 1743";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/Essays1743-bold-italic.ttf") format("truetype");
+}
+
+
+body {
+  font-size: 13px;
+  font: large/1.556 "Libertine", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+  word-spacing: 0.1em;  
+  background: #fff url(../images/bg2.png) center;
+  text-align: justify;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul { margin: 1em; padding: 0;}
+ul li{ list-style: none;}
+h1, h2, h3, h4{
+	font-family: "Essays 1743", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+	font-weight: normal;
+	text-shadow: 0 0 1px #667;
+}
+
+
+h5{ 
+  font-weight: normal;
+  text-shadow: 0 0 1px #667;
+  font-size: 20px;
+}
+
+a, label{ font-family: "Essays 1743", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;  font-weight: normal; }
+input { border-radius: 0; }
+
+/* Generic classes */
+
+.left{float: left;}
+.right{float: right;}
+.hidden{display: none;}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+}
+
+.auth form { display: none; }
+.auth textarea { width: 100%; }
+
+/* login form */
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+  
+
+
+
+
