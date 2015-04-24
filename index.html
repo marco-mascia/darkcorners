@@ -87,10 +87,9 @@
                 		<div class="panel-heading"><label>Warband</label></div>
                 		<div class="panel-body">                		 	 
                 		 	 <label>Name</label>                			 
-                			 <input id="warname" type="text" name="warname" class="form-control" value="" placeholder="Warband Name" >
-                			                 			 
+                			 <input id="warname" type="text" name="warname" class="form-control" placeholder="Warband Name">                			                 			 
                 			 <label>Type</label>                			 
-                			 <input id="wartype" type="text" name="wartype" class="form-control" value="" placeholder="Warband Type" >             			 
+                			 <input id="wartype" type="text" name="wartype" class="form-control" placeholder="Warband Type">             			 
                 		</div>
                 		<div class="panel-footer">
                 		 	<button id="saveNewWar" class="btn btn-default">Create</button>
@@ -127,7 +126,7 @@
                 			<button id="updateWar" type="button" class="btn btn-default" data-loading-text="Updating...">
                 				Update Warband
                 			</button>               			
-                			<button id="deleteWar" type="button" class="btn btn-danger navbar-right">
+                			<button id="deleteWar" type="button" class="btn btn-danger">
                 				<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete Warband
                 			</button>                			  
                 		</div>                		 
@@ -137,9 +136,9 @@
                     	<div class="panel-heading"><label>Add unit</label></div>   
                     	<div class="panel-body">                    	                    	
 	                        <div class="form-group form-inline col-sm-12 col-md-12 col-lg-12">	                         	
-	                        	<input type="text" name="chrnr" class="form-control" value="" placeholder="Nr" >	                        	
-								<input type="text" name="chrname" class="form-control" value="" placeholder="Name" >
-								<input type="text" name="chrtype" class="form-control" value="" placeholder="Type" >				
+	                        	<input type="text" name="chrnr" class="form-control" placeholder="Nr">	                        	
+								<input type="text" name="chrname" class="form-control" placeholder="Name">
+								<input type="text" name="chrtype" class="form-control" placeholder="Type">				
 								<select name="chrrole">
 									<option value="hero">Hero</option>
 									<option value="henchmen">Henchmen</option>
@@ -224,14 +223,14 @@
 	                        </table>
 	
 	                        <div id="equip" class="form-group col-centered col-sm-12 col-md-12 col-lg-12">       	                                
-                                <section id="eqlist">                      
+                                <section class="eqlist">                      
                                     <ul></ul>
                                     <div class="form-inline">
                                         <div class="form-group">    
-                                            <input type="text" id="wname"class="form-control" name="weapon" placeholder="Weapon">
-                                            <input type="text" id="wcost" class="form-control" name="cost" placeholder="Cost">
+                                            <input type="text" class="wname form-control" name="weapon" placeholder="Weapon">
+                                            <input type="text" class="wcost form-control" name="cost" placeholder="Cost">
                                         </div>                                           
-                                        <button id="wadd" class="btn btn-default">Add</button>                                         
+                                        <button class="wadd btn btn-default">Add</button>                                         
                                     </div>
                                 </section>
                                 

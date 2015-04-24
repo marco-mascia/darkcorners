@@ -1,0 +1,16 @@
+ <section>                      
+    <ul>
+    	<li ng-repeat="rule in rules" id="rule{{rule.id}}">
+    		{{rule.descr}}
+    		<button type="button" class="btn btn-xs" ng-click="deleteRule($index)">
+  				Delete
+			</button>	
+    	</li>
+    </ul>    
+    <div class="form-inline">
+        <div class="form-group">    
+            <input type="text" class="form-control" placeholder="Rule or Skill" ng-model="descr" />            
+        </div>                                           
+        <button class="btn btn-default" ng-click="addRule()">Add</button>                                         
+    </div>
+</section>

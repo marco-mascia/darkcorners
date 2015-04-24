@@ -1,0 +1,17 @@
+ <section>                      
+    <ul>
+    	<li ng-repeat="item in items" id="item{{item.id}}">
+    		{{item.weapon}} {{item.cost}}  
+    		<button type="button" class="btn btn-xs" ng-click="deleteItem($index)">
+  				Delete
+			</button>	
+    	</li>
+    </ul>    
+    <div class="form-inline">
+        <div class="form-group">    
+            <input type="text" class="form-control" placeholder="Weapon" ng-model="weapon" />
+            <input type="text" class="form-control" placeholder="Cost" ng-model="cost" />
+        </div>                                           
+        <button class="btn btn-default" ng-click="addItem()">Add</button>                                         
+    </div>
+</section>

@@ -1,3 +1,127 @@
+(function(){
+	var app = angular.module('darkcorners', ["firebase"]);
+	var heroes = [{
+			name: "John Doe",
+			type: "Good Guy",
+			cost: 50,
+			canEdit: false			
+		},{
+			name: "Jane Doe",
+			type: "Bad Girl",
+			cost: 50,
+			canEdit: true			
+		}];
+	
+	var nHero = {
+			name: "",	
+			type: "",
+			cost: 0,
+			items: [],
+			rules: [],
+			canEdit: false
+		};
+	
+	
+	app.factory("items", function(){
+	    /*
+		var items = {};
+	    items.data = [{
+	        id: "1",
+	        weapon: "Dagger",
+	        cost: "Free"
+	    }];
+	    */			
+	    return nHero.items;
+	});
+	
+	app.factory("rules", function(){
+	    /*
+		var rules = {};
+	    rules.data = [];
+	    return rules;
+	    */	
+	    return nHero.rules;
+	});
+	
+	
+	app.controller("SampleCtrl", function($scope, $firebaseObject) {
+		  var ref = new Firebase("https://mordheim.firebaseio.com");
+		  // download the data into a local object
+		  var syncObject = $firebaseObject(ref);
+		  syncObject.$bindTo($scope, "data");		  
+	});
+	
+	app.controller('HeroController', function($scope){		
+		this.heroes = heroes;
+		this.nHero = nHero;		
+		this.updateHero = function(hero){
+			console.log('update hero on db ', hero);
+		};
+	});
+	
+	app.controller('ProfileController', function($scope){
+	      $scope.hero = nHero;
+	      $scope.addHero = function() {	    	  
+	       if ($scope.hero.name) {
+	        	console.log($scope.hero);
+	            heroes.push($scope.hero);	
+	            $scope.hero = nHero;
+	       }
+	      };	      
+	});
+	
+	app.directive("equipList", function(){
+	    return{
+	      restrict: "E",
+	      templateUrl: "equip-list.html",	      
+	      controller: function($scope, items){
+	    	 $scope.items = items;   	    	 
+	    	 $scope.addItem = function (index) {
+    	        items.push({
+    	            id: $scope.items.length + 1,
+    	            weapon: $scope.weapon,
+    	            cost: $scope.cost
+    	        });
+	    	 };	    	 
+	    	 $scope.deleteItem = function (index) {
+	    	     items.splice(index, 1);
+	    	 };	    	 
+	      },
+	      controllerAs: "eqCtrl"
+	    };
+	  });
+	
+	app.directive("rulesList", function(){
+	    return{
+	      restrict: "E",
+	      templateUrl: "rules-list.html",	      
+	      controller: function($scope, rules){
+	    	 $scope.rules = rules;   	    	 
+	    	 $scope.addRule = function (index) {
+	    		 rules.push({
+    	            id: $scope.rules.length + 1,
+    	            descr: $scope.descr
+    	            
+    	        });
+	    	 };	    	 
+	    	 $scope.deleteRule = function (index) {
+	    		 rules.splice(index, 1);
+	    	 };	    	 
+	      },
+	      controllerAs: "ruleCtrl"
+	    };
+	  });
+	
+})();
+
+
+
+
+
+
+
+
+
 const BASEURL = "https://mordheim.firebaseio.com";
 const WARBANDS_LOCATION = "warbands";
 const USERS_LOCATION = "users";
@@ -17,30 +141,7 @@ $(function() {
 })
 
 
-/*
-var selIds = function(){		
-		var arr = [];
-		var list = arr.unique1();
-		return{
-			getList: function(){
-				return list;
-			},
-			pushEl: function(el){								
-				list.push(el);
-				
-			},
-			popEl: function(el){				
-				var i = list.indexOf(el);
-				if(i != -1) {
-					list.splice(i, 1);
-				}
-			},
-			clear: function(){
-				list = arr.unique1();
-			}
-		}		
-	}();
-	*/
+
 	
 var equip = {
 
@@ -48,11 +149,6 @@ var equip = {
 
 	init: function(){
 		$("#wadd").click(equip.add);	
-		/*
-		equip.list.append(	
-		 	equip.buildEqOpt("Dagger","Free", false)
-		);
-		*/
 	},
 
 	buildEqOpt: function(wname, wcost, removable){
@@ -69,9 +165,11 @@ var equip = {
 		return li;
 	},
 
-	add: function(){	
-		var name = $("#wname").val();
-		var cost = $("#wcost").val()
+	add: function(){
+		var name = $(this).closest('.wname').val(); // $("#wname").val();
+		console.log("add name: ", name);
+		var cost = $("#wcost").val();
+		
 		if(name != "" && cost != ""){
 			equip.list.append(	
 				equip.buildEqOpt(name, cost, true)
@@ -94,6 +192,36 @@ var equip = {
 		  	list[wnameStrip] = wcost;
 		  });		
 		return list;
+	},
+	
+	buildEqSection: function(equipList){
+		
+		/*
+		 <section id="eqlist">                      
+	         <ul></ul>
+	         <div class="form-inline">
+	             <div class="form-group">    
+	                 <input type="text" id="wname"class="form-control" name="weapon" placeholder="Weapon">
+	                 <input type="text" id="wcost" class="form-control" name="cost" placeholder="Cost">
+	             </div>                                           
+	             <button id="wadd" class="btn btn-default">Add</button>                                         
+	         </div>
+	     </section>
+	     */     
+     
+		var section = $("<section>").attr("id", "eqlist");
+		var ul = $("<ul>").appendTo(section);
+		var buttonSet = "<div class='form-inline'>" +
+				"<div class='form-group'>" +
+				"<input type='text' class='wname form-control' name='weapon' placeholder='Weapon'>" +
+				"<input type='text' class='wcost form-control' name='cost' placeholder='Cost'>" +
+				"</div>" +
+				"<button class='wadd btn btn-default'>Add</button>" +
+				"</div>"	    
+				section.append(buttonSet);
+		
+		$(".wadd").on("click", equip.add);
+		return section;
 	}
 }
 
@@ -210,7 +338,10 @@ var app = {
 	addMember: function(){
 		var jsonData = $("#frmDetail").serializeObject();
 		var warid = $("#frmDetail").attr("warid");		
+		delete jsonData.warname;
+		delete jsonData.wartype;
 		var newPostRef = membersRef.push(jsonData);	
+		
 		app.getMembersList(sessionStorage.getItem("userid"), warid);
 
 		var postID = newPostRef.key();
