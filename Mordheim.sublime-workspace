@@ -1,0 +1,935 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"w",
+				"wname"
+			],
+			[
+				"rules",
+				"rulesRef"
+			],
+			[
+				"equip",
+				"equip"
+			],
+			[
+				"equi",
+				"equip"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"rem",
+				"remove"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"remove",
+				"removeEl"
+			],
+			[
+				"li",
+				"li"
+			],
+			[
+				"sectio",
+				"sectionId"
+			],
+			[
+				"se",
+				"section_id"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"de",
+				"defaultEl"
+			],
+			[
+				"lis",
+				"listCtrl"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"snap",
+				"snapshot"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"us",
+				"userName"
+			],
+			[
+				"get",
+				"getWarbandList"
+			],
+			[
+				"sna",
+				"snapshot"
+			],
+			[
+				"sn",
+				"snapshot"
+			],
+			[
+				"c",
+				"current_warband"
+			],
+			[
+				"war",
+				"warName"
+			],
+			[
+				"new",
+				"newWar"
+			],
+			[
+				"ta",
+				"table-responsive"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"ap",
+				"appendTo"
+			],
+			[
+				"bui",
+				"buildStatTable"
+			],
+			[
+				"appen",
+				"appendTo"
+			],
+			[
+				"ws",
+				"ws"
+			],
+			[
+				"append",
+				"appendTo"
+			],
+			[
+				"M",
+				"M"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"home",
+				"home"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"ge",
+				"getMonster"
+			],
+			[
+				"roll",
+				"rollEncounter"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"sele",
+				"select"
+			],
+			[
+				"cle",
+				"clearChar"
+			],
+			[
+				"op",
+				"openChar"
+			],
+			[
+				"ch",
+				"chList"
+			],
+			[
+				"ot",
+				"option"
+			],
+			[
+				"build",
+				"buildCharList"
+			],
+			[
+				"ll",
+				"ll"
+			],
+			[
+				"max",
+				"max"
+			],
+			[
+				"he",
+				"healthChange"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"buil",
+				"buildInputField"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bu",
+				"buildSkillList"
+			],
+			[
+				"ski",
+				"skillList"
+			],
+			[
+				"skill",
+				"skillValue"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"prod",
+				"products"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"mag",
+				"margin-right"
+			],
+			[
+				"pro",
+				"products"
+			],
+			[
+				"produ",
+				"productItem"
+			],
+			[
+				"rende",
+				"renderList"
+			],
+			[
+				"render",
+				"renderList"
+			],
+			[
+				"pr",
+				"products"
+			],
+			[
+				"controller",
+				"controllers"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"thum",
+				"thums"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"body",
+				"body"
+			],
+			[
+				"port",
+				"portraitUrl"
+			],
+			[
+				"portr",
+				"portraitUrl"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"dra",
+				"drag"
+			],
+			[
+				"Dra",
+				"Dragons"
+			],
+			[
+				"bk",
+				"background-color"
+			],
+			[
+				"col-",
+				"col-md-6"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"appe",
+				"appendTo"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"mon",
+				"monsters"
+			],
+			[
+				"mob",
+				"mobdetails"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"kil",
+				"killButton"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"ann",
+				"announcement-text"
+			],
+			[
+				"model",
+				"modelDetails"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"attr",
+				"attributes"
+			],
+			[
+				"mons",
+				"monsterDetails"
+			],
+			[
+				"tem",
+				"tempId"
+			],
+			[
+				"sp",
+				"spMagic"
+			],
+			[
+				"enc",
+				"encounters"
+			],
+			[
+				"en",
+				"encounters"
+			],
+			[
+				"encou",
+				"encounters"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"item",
+				"itemList"
+			],
+			[
+				"temp",
+				"tempItemList"
+			],
+			[
+				"paddn",
+				"padding-right"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"go",
+				"goldValue"
+			],
+			[
+				"is",
+				"instanceof"
+			],
+			[
+				"att",
+				"attributes"
+			],
+			[
+				"rule",
+				"rules"
+			],
+			[
+				"bo",
+				"border-bottom"
+			],
+			[
+				"mr",
+				"margin"
+			],
+			[
+				"conte",
+				"context"
+			],
+			[
+				"top",
+				"topBar"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"kill",
+				"killContainer"
+			],
+			[
+				"f",
+				"fBox"
+			],
+			[
+				"mat",
+				"margin-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Object Value JS"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 148.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/marcomascia/Projects/Patrimony/fugu-conf.properties",
+		"/Users/marcomascia/Projects/Workspace/fugu-conf.properties",
+		"/Users/marcomascia/Documents/darkcorners/equip-list.html",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/index.html",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/css/bootstrap.min.css",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/js/login.js",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/js/profile.js",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/css/respTable.css",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/js/app.js",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/css/style.css",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/equip.html",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/js/main.js",
+		"/Users/marcomascia/Google Drive/Progetti/Mordheim/js/path.min.js",
+		"/Users/marcomascia/Google Drive/Progetti/WqMasterJs/js/vendor/jquery.serialize-object.compiled.js",
+		"/Users/marcomascia/Google Drive/Progetti/WqMasterJs/js/vendor/path.min.js",
+		"/Users/marcomascia/Google Drive/Progetti/WqMasterJs/index.html",
+		"/Users/marcomascia/Google Drive/Progetti/html5 test/index.html",
+		"/Users/marcomascia/Google Drive/Progetti/html5 test/css/style.css"
+	],
+	"find":
+	{
+		"height": 66.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ASSET_STATEMENT_PMS",
+			"frmHome",
+			"handleAuthResponse",
+			"chrRetrieve",
+			"warname\n\n\n",
+			"warname",
+			"warband",
+			"alert",
+			"id=\"\"",
+			"form",
+			"serializeObject",
+			"serializeObject\n\n\n\n\n",
+			"submit",
+			"container",
+			"showAlert",
+			"aler",
+			"unauth",
+			"login",
+			"txtName",
+			"txtName4",
+			"getMonster",
+			"rollEncounter",
+			"app.init",
+			"init",
+			"rollEncounterBtn",
+			"\"",
+			"span",
+			"style=\"display: none;\"",
+			"getAttributeValue",
+			"getAttribute",
+			"fix",
+			"select",
+			"buildSkillList",
+			"merits",
+			"buildInfo",
+			"buildLongList",
+			" $(this).find(\".llEditValue, .longList\").toggleClass('hidden');",
+			"skillEditValue",
+			"infoValue",
+			"skillValue",
+			"skillName",
+			"skill",
+			"/",
+			">",
+			"<",
+			">",
+			"<",
+			"#000000",
+			"#000",
+			"#ffffff",
+			"#fff",
+			"#f1f1f1",
+			"#ccc",
+			"#cccccc",
+			"#666",
+			"h4",
+			"row",
+			"col",
+			"doub",
+			"subtitle",
+			"btnBox",
+			"itemName",
+			"grey",
+			"newsTicker",
+			"newsTickerù",
+			"newsTicker",
+			"newsTicler",
+			"works",
+			"remote",
+			"ability",
+			"40px",
+			"e",
+			"mario",
+			"my cart",
+			"70",
+			"000ho",
+			"10",
+			"@\"},",
+			"92",
+			"58",
+			"paging_two_button\n",
+			"paging_two_button",
+			"paginate",
+			"\"",
+			"td",
+			"angular",
+			"<script type=\"text/javascript\" src=\"js/angular-route.min.js\"></script> ",
+			"height",
+			"#000",
+			"result",
+			"doubCol",
+			"entry",
+			"doublecol",
+			"style",
+			"bold",
+			"white",
+			"#FFF",
+			"#FFFFFF",
+			"#F1F1F1",
+			"@light-grey",
+			"news",
+			"recent",
+			"entry",
+			"showcase",
+			"slideshow",
+			"#CCCCCC",
+			"#666",
+			"subtitle",
+			"item",
+			"subtitle",
+			"YOOX",
+			"\"",
+			"_tmp",
+			"hierarchyTypeId",
+			"VAMPIRE",
+			"hate",
+			"sorcerer",
+			"chaos",
+			"sorcerer",
+			"mark",
+			"psi",
+			"hate",
+			"chaos hero",
+			"chaos",
+			"center",
+			"bold",
+			"getMonster",
+			"skill"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"div",
+			"",
+			"buildll",
+			"%2F",
+			"%3e",
+			"%3c",
+			"%3e",
+			"%3c",
+			"@hd-color",
+			"@selection-color",
+			"@art-color",
+			"@border-color",
+			"@txt-color",
+			"@text-color",
+			"skill",
+			"'",
+			"th",
+			"",
+			"@default-grey",
+			"OBJECTWAY",
+			"'",
+			"rpb-giant-attacks",
+			"'",
+			"\",",
+			"\"",
+			"",
+			"\",",
+			"\"",
+			"",
+			"'",
+			"",
+			"'",
+			"{\"id\":\"rpb-hate\", \"value\":\"Elves\"}",
+			"\"",
+			"\",",
+			"\"",
+			"\",\"",
+			"\",",
+			"\"",
+			"",
+			"'",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"7\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"9\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"10\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"3\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"4\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"5\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"6\"}",
+			"#d30000",
+			"#980000",
+			"\"rpb-plague\"",
+			"\"rpb-paralysis\"",
+			"{\"id\":\"rpb-daemonic\", \"value\":\"-1\"}",
+			"{\"id\":\"rpb-assassinate\", \"value\":\"3+\"}",
+			"{\"id\":\"rpb-assassinate\", \"value\":\"4+\"}",
+			"{\"id\":\"rpb-assassinate\", \"value\":\"5+\"}",
+			"{\"id\":\"rpb-assassinate\", \"value\":\"6+\"}",
+			"\"pb-drag-and-rend\"",
+			"\"rpb-petrify\"",
+			"{\"id\":\"rpb-web\", \"value\":\"(1d3)\"}",
+			"{\"id\":\"rpb-web\", \"value\":\"(1d6)\"}",
+			"\"rpb-deathleap\"",
+			"{\"id\":\"rpb-frenzy\", \"value\":\"3+\"}",
+			"{\"id\":\"rpb-frenzy\", \"value\":\"4+\"}",
+			"{\"id\":\"rpb-frenzy\", \"value\":\"6+\"}",
+			"{\"id\":\"rpb-frenzy\", \"value\":\"5+\"}",
+			"\"rpb-weeping-blade\"",
+			"{\"id\":\"rpb-magic-drain\", \"value\":\"4+\"}",
+			"{\"id\":\"rpb-magic-drain\", \"value\":\"5+\"}",
+			"{\"id\":\"rpb-magic-drain\", \"value\":\"6+\"}",
+			"\"rpb-gang-up\"",
+			"\"rpb-vomit\"",
+			"\"rpb-breathe-fire\"",
+			"{\"id\":\"rpb-ignore-blows\", \"value\":\"3+\"}",
+			"{\"id\":\"rpb-ignore-blows\", \"value\":\"4+\"}",
+			"{\"id\":\"rpb-ignore-blows\", \"value\":\"6+\"}",
+			"{\"id\":\"rpb-ignore-blows\", \"value\":\"5+\"}",
+			"\"rpb-drain-power\"",
+			"\"rpb-large-monster\"",
+			"{\"id\":\"rpb-tattoos\", \"value\":\"5+\"}",
+			"{\"id\":\"rpb-tattoos\", \"value\":\"6+\"}",
+			"\"rpb-fight-in-ranks\"",
+			"{\"id\":\"rpb-dodge\", \"value\":\"6+\"}",
+			"{\"id\":\"rpb-dodge\", \"value\":\"5+\"}",
+			"{\"id\":\"rpb-dodge\", \"value\":\"4+\"}",
+			"{\"id\":\"rpb-dodge\", \"value\":\"3+\"}",
+			"-cdata-section",
+			"{\"id\":\"rpb-magic-resistance\", \"value\":\"3+\"}",
+			"{\"id\":\"rpb-magic-resistance\", \"value\":\"4+\"}",
+			"{\"id\":\"rpb-magic-resistance\", \"value\":\"6+\"}",
+			"{\"id\":\"rpb-magic-resistance\", \"value\":\"5+\"}",
+			"{\"id\":\"rpb-regenerate\", \"value\":\"2\"}",
+			"{\"id\":\"rpb-regenerate\", \"value\":\"1\"}",
+			"{\"id\":\"rpb-terror\", \"value\":\"9\"}",
+			"{\"id\":\"rpb-terror\", \"value\":\"10\"}",
+			"{\"id\":\"rpb-terror\", \"value\":\"11\"}",
+			"{\"id\":\"rpb-terror\", \"value\":\"12\"}",
+			"{\"id\":\"rpb-terror\", \"value\":\"13\"}",
+			"{\"id\":\"rpb-terror\", \"value\":\"14\"}",
+			"{\"id\":\"rpb-ambush-magic\", \"value\":\"5+\"}",
+			"{\"id\":\"rpb-ambush-magic\", \"value\":\"A\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"6+\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"10+\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"7+\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"12\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"4+\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"5+\"}",
+			"{\"id\":\"rpb-ignore-pain\", \"value\":\"6+\"}",
+			"{\"id\":\"rpb-magic-dispel\", \"value\":\"6+\"}",
+			"{\"id\":\"rpb-magic-dispel\", \"value\":\"5+\"}",
+			"{\"id\":\"rpb-magic-dispel\", \"value\":\"4+\"}",
+			"\"rpb-fly\"",
+			"{\"id\":\"rpb-fear\", \"value\":12}",
+			"{\"id\":\"rpb-fear\", \"value\":11}",
+			"{\"id\":\"rpb-fear\", \"value\":10}",
+			"{\"id\":\"rpb-fear\", \"value\":9}",
+			"{\"id\":\"rpb-fear\", \"value\":8}",
+			"{\"id\":\"rpb-fear\", \"value\":7}",
+			"{\"id\":\"rpb-fear\", \"value\":6}",
+			"{\"id\":\"rpb-fear\", \"value\":5}",
+			"{\"id\":\"rpb-fear\", \"value\":4}",
+			"{\"id\":\"rpb-fear\", \"value\":3}",
+			"{\"id\":\"rpb-fear\", \"value\":2}",
+			"{\"id\":\"rpb-fear\", \"value\":1}",
+			"{\"id\":\"rpb-fear\", \"value\":5}",
+			"{\"id\":\"rpb-fear\", \"value\":6}",
+			"{\"id\":\"rpb-fear\", \"value\":5}"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 271.0,
+	"status_bar_visible": true
+}

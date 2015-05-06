@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<ul>
+	<li ng-repeat="thing in items"> {{thing}} </li>
+</ul>
+<ul>
+	<li ng-repeat="thing in friends"> {{thing}} </li>
+</ul>
+
+<input type="text" ng-model="title">
+<select ng-model="selectedValue" ng-options="value for value in items"></select>
+<!--<select ng-options="value for value in weapontags"></select>-->
+
+
