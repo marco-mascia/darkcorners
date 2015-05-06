@@ -1,13 +1,17 @@
 <h1>{{title}}</h1>
-<ul>
-	<li ng-repeat="thing in items"> {{thing}} </li>
-</ul>
-<ul>
-	<li ng-repeat="thing in friends"> {{thing}} </li>
-</ul>
-
+<!--<ul><li ng-repeat="thing in items"> {{thing}} </li></ul>-->
+<!--
 <input type="text" ng-model="title">
-<select ng-model="selectedValue" ng-options="value for value in items"></select>
+<ul><li ng-repeat="thing in friends"> 
+	<input type="text" ng-model="thing.name">
+	<input type="text" ng-model="thing.age">
+	<button ng-click="friends.splice($index,1)" class="btn btn-danger">-</button>
+</li></ul>
+<button ng-click="save()" class="btn btn-primary">Save</button>
+-->
+<!--<select ng-model="selectedValue" ng-options="value for value in items"></select>-->
 <!--<select ng-options="value for value in weapontags"></select>-->
+
+
 
 

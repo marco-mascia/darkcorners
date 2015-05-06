@@ -1,0 +1,93 @@
+<form name="heroForm" ng-submit="hCtrl.updateHero(hero)">
+	<div class="form-group form-inline"> 
+	  	<input type="text" class="form-control" placeholder="Name" ng-model="name"/>	               
+		<input type="text" class="form-control" placeholder="Type" ng-model="type"/>
+	</div>		
+	   <table class="table-responsive">
+	      <thead>
+	          <tr>
+	              <th>M</th>
+	              <th>WS</th>
+	              <th>BS</th>
+	              <th>S</th>
+	              <th>T</th>
+	              <th>W</th>
+	              <th>I</th>
+	              <th>A</th>
+	              <th>Ld</th>
+	              <th>Px</th>
+	              <th>Cost</th>
+	          </tr>
+	      </thead>
+	      <tbody>
+	          <tr>                                
+	              <td class="mv propName">                                    
+	                  <div class="form-group col-centered">
+	                      <input type="text" name="mv" class="mv form-control" ng-model="mv"/>                          	    
+	                  </div>
+	              </td>
+	              <td class="ws propName">
+	                 <div class="form-group col-centered">
+	                      <input type="text" name="ws" class="ws form-control" ng-model="ws">
+	                  </div>
+	              </td>
+	              <td class="bs propName">
+	                  <div class="form-group col-centered">
+	                      <input type="text" name="bs" class="bs form-control" ng-model="bs">
+	                  </div>
+	              </td>
+	              <td class="str propName">
+	                 <div class="form-group col-centered">
+	                      <input type="text" name="str" class="str form-control" ng-model="str">
+	                  </div>
+	              </td>
+	              <td class="thg propName">
+	                 <div class="form-group col-centered">
+	                      <input type="text" name="thg" class="thg form-control" ng-model="thg">
+	                  </div>
+	              </td>
+	              <td class="wnd propName">
+	                  <div class="form-group col-centered">
+	                      <input type="text" name="wnd" class="wnd form-control" ng-model="wnd">
+	                  </div>
+	              </td>
+	              <td class="ini propName">
+	                 <div class="form-group col-centered">
+	                      <input type="text" name="ini" class="ini form-control" ng-model="ini">
+	                  </div>
+	              </td>
+	              <td class="atk propName">
+	                  <div class="form-group col-centered">
+	                      <input type="text" name="atk" class="atk form-control" ng-model="atk">
+	                  </div>
+	              </td>
+	              <td class="ld propName">
+	                 <div class="form-group col-centered">
+	                      <input type="text" name="ld" class="ld form-control" ng-model="ld">
+	                  </div>
+	              </td>
+	              <td class="px propName">
+	                 <div class="form-group col-centered">
+	                      <input type="text" name="px" class="px form-control" ng-model="px">
+	                  </div>
+	              </td>
+	              <td class="cost propName">
+	                 <div class="form-group col-centered">
+	                      <input type="text" name="cost" class="cost form-control" ng-model="cost">
+	                  </div>
+	              </td>
+	          </tr>
+	      </tbody>
+	  </table>  
+	   <div>	   
+	   	<equip-list><equip-list/>
+	   </div> 
+	   <div>	   
+	   	<rules-list><rules-list/>
+	   </div>
+	  <input class="btn btn-default" value="Submit" ng-click="addHero()"/>	  
+	
+					  		
+	<button class="btn btn-default" ng-show="canEdit">Edit</button>						
+	<input class="btn btn-default" type="submit" value="Submit"> 	
+</form>	

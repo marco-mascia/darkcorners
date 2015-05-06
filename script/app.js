@@ -1,23 +1,22 @@
 (function(){
-	 
+
 	var app = angular
 		.module('darkcorners', [
 			'ui.router'
 		])		
 		.config(['$urlRouterProvider','$stateProvider', function($urlRouterProvider, $stateProvider){
 			$urlRouterProvider.otherwise('/');
-
 			$stateProvider
 				.state('home', {
 					url: '/', 
 					templateUrl: 'templates/home.html',
 					controller: 'homeCtrl',
-					resolve: {
-						weapontags: ['$http', function($http){
-							return $http.get('./api/weapontags.json').then(function(response){								
+					resolve: {										
+						heroes: ['$http', function($http){
+							return $http.get('http://lostmemories.altervista.org/mh/api/heroes.json').then(function(response){								
 								return response.data;
 							})
-						}]
+						}]					
 					}
 				})				
 				.state('about', {
@@ -28,64 +27,101 @@
 				
 		}]);
 
+		app.directive("heroBox", function() {
+			return {
+				restrict: 'E',
+				transclude: true,
+				templateUrl: 'templates/hero-box.html',
+				controller: 'heroCtrl'			
+			};
+		});
 
 
+		app.directive("heroList", function() {
+			return {
+				restrict: 'E',
+				transclude: true,
+				templateUrl: 'templates/hero-list.html',
+			    controller: function($scope, heroes){
+			    	 $scope.heroes = heroes;			     	 
+			    }													
+			};
+		});
 
+		app.directive("equipList", function(){
+		    return {
+		      restrict: "E",
+		      templateUrl: "templates/equip-list.html",	      
+		      controller: function($scope){	 
 
+		    	 $scope.addItem = function(index) {
+	    	        items.push({
+	    	            id: $scope.items.length + 1,
+	    	            weapon: $scope.weapon,
+	    	            cost: $scope.cost
+	    	        });
+		    	 };	    	 
+		    	 $scope.deleteItem = function(index) {
+		    	     items.splice(index, 1);
+		    	 };	    	 
+		    	 
+		      },
+		      controllerAs: "eqCtrl"
+		    };
+		});
+		
+		app.directive("rulesList", function(){
+		    return {
+		      restrict: "E",
+		      templateUrl: "templates/rules-list.html",	      
+		      controller: function($scope){
+		      	/*
+		    	 $scope.rules = rules;   	    	 
+		    	 $scope.addRule = function(index) {
+		    		 rules.push({
+	    	            id: $scope.rules.length + 1,
+	    	            descr: $scope.descr
+	    	            
+	    	        });
+		    	 };	    	 
+		    	 $scope.deleteRule = function(index) {
+		    		 rules.splice(index, 1);
+		    	 };	    
+				*/
+		      },
+		      controllerAs: "ruleCtrl"
+		    };
+		});
 
-
-
-
-
-
-
-
-
-
-
-
-
-	var heroes = [{
-			name: "John Doe",
-			type: "Good Guy",
-			cost: 50,
-			canEdit: false			
-		},{
-			name: "Jane Doe",
-			type: "Bad Girl",
-			cost: 50,
-			canEdit: true			
-		}];
-	
-	var nHero = {
-			name: "",	
-			type: "",
-			cost: 0,
-			items: [],
-			rules: [],
-			canEdit: false
-		};
-	
-	
-	app.factory("items", function(){
-	    /*
-		var items = {};
-	    items.data = [{
-	        id: "1",
-	        weapon: "Dagger",
-	        cost: "Free"
+	app.factory("heroes", function(){
+	    var heroes = [{
+	    	name: "Will", 
+	    	type: "slow", 
+	    	ws: 4,
+	    	rules: [{
+	    		id: 1,
+	    		descr: "rule1"
+	    	}],
+	    	items: [{ 
+	    		id: 1,
+	        	weapon: "Dagger",
+	        	cost: "Free"
+	        }]
+	    },{ name: "Laura",
+	    	type: "fast",
+	    	ws: 4,
+	    	rules: [{
+	    		id: 2,
+	    		descr: "rule2"
+	    	}],
+	    	items: [{
+	    		id: 1,
+	        	weapon: "Dagger",
+	        	cost: "Free"
+	    	}]
 	    }];
-	    */			
-	    return nHero.items;
-	});
-	
-	app.factory("rules", function(){
-	    /*
-		var rules = {};
-	    rules.data = [];
-	    return rules;
-	    */	
-	    return nHero.rules;
+
+	    return heroes;
 	});
 	
 	
@@ -181,48 +217,7 @@
 	      };	      
 	});
 	*/
-	/*
-	app.directive("equipList", function(){
-	    return{
-	      restrict: "E",
-	      templateUrl: "equip-list.html",	      
-	      controller: function($scope, items){
-	    	 $scope.items = items;   	    	 
-	    	 $scope.addItem = function(index) {
-    	        items.push({
-    	            id: $scope.items.length + 1,
-    	            weapon: $scope.weapon,
-    	            cost: $scope.cost
-    	        });
-	    	 };	    	 
-	    	 $scope.deleteItem = function(index) {
-	    	     items.splice(index, 1);
-	    	 };	    	 
-	      },
-	      controllerAs: "eqCtrl"
-	    };
-	});
+
 	
-	app.directive("rulesList", function(){
-	    return{
-	      restrict: "E",
-	      templateUrl: "rules-list.html",	      
-	      controller: function($scope, rules){
-	    	 $scope.rules = rules;   	    	 
-	    	 $scope.addRule = function(index) {
-	    		 rules.push({
-    	            id: $scope.rules.length + 1,
-    	            descr: $scope.descr
-    	            
-    	        });
-	    	 };	    	 
-	    	 $scope.deleteRule = function(index) {
-	    		 rules.splice(index, 1);
-	    	 };	    	 
-	      },
-	      controllerAs: "ruleCtrl"
-	    };
-	});
-	*/
 })();
 

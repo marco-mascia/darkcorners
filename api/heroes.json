@@ -1,0 +1,4 @@
+[
+    {"name": "Will", "type": "slow", age": 30},
+    {"name": "Laura", "type": "fast", "age": 27}
+]
