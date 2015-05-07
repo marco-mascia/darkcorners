@@ -1,0 +1,63 @@
+<form name="heroForm" ng-submit="hCtrl.updateHero(hero)">
+	<div class="form-group form-inline"> 		
+	  <input type="text" class="form-control" placeholder="Name" ng-model="hero.name" />		  	        
+		<input type="text" class="form-control" placeholder="Type" ng-model="hero.type" />		
+	</div>
+    <table class="table">
+    	<thead>
+          <tr>
+              <th>M</th>
+              <th>WS</th>
+              <th>BS</th>
+              <th>S</th>
+              <th>T</th>
+              <th>W</th>
+              <th>I</th>
+              <th>A</th>
+              <th>Ld</th>
+              <th>Px</th>
+              <th>Cost</th>
+          </tr>
+      </thead>	 
+      <tbody>
+      	 <tr>
+      	 	<td>      	 		
+      	 		<input type="text" name="mv" class="mv form-control" ng-model="hero.mv" />                          	    
+      	 	</td>
+      	 	<td>      	 		
+      	 		<input type="text" name="mv" class="ws form-control" ng-model="hero.ws" />                          	    
+      	 	</td>
+      	 	<td>
+      	 		<input type="text" name="bs" class="bs form-control" ng-model="hero.bs" />
+      	 	</td>
+      	 	<td>
+      	 		<input type="text" name="str" class="str form-control" ng-model="hero.str" />                          	
+      	 	</td>
+      	 	<td>
+      	 		<input type="text" name="thg" class="thg form-control" ng-model="hero.thg" />     
+      	 	</td>
+      	 	<td>
+      	 		<input type="text" name="wnd" class="wnd form-control" ng-model="hero.wnd" />    
+      	 	</td>
+      	 	<td>
+      	 		<input type="text" name="ini" class="ini form-control" ng-model="hero.ini" />    
+      	 	</td>
+      	 	<td>
+      	 		<input type="text" name="atk" class="atk form-control" ng-model="hero.atk" />
+      	 	</td>
+      	 	<td>
+      	 		<input type="text" name="ld" class="ld form-control" ng-model="hero.ld" />
+      	 	</td>
+      	 	<td>
+      	 		<input type="text" name="px" class="px form-control" ng-model="hero.px" />
+      	 	</td>
+      	 	<td>
+      	 		<input type="text" name="cost" class="cost form-control" ng-model="hero.cost" />
+      	 	</td>      	 
+      	 </tr>
+      </tbody> 
+	</table>	
+  <rules-list></rules-list>
+	<equip-list></equip-list>	
+	<input class="btn btn-default" value="Submit" ng-click="addHero()"/>		
+</form>	

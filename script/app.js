@@ -1,5 +1,4 @@
 (function(){
-
 	var app = angular
 		.module('darkcorners', [
 			'ui.router'
@@ -11,12 +10,14 @@
 					url: '/', 
 					templateUrl: 'templates/home.html',
 					controller: 'homeCtrl',
-					resolve: {										
+					resolve: {	
+						/*									
 						heroes: ['$http', function($http){
 							return $http.get('http://lostmemories.altervista.org/mh/api/heroes.json').then(function(response){								
 								return response.data;
 							})
-						}]					
+						}]		
+						*/			
 					}
 				})				
 				.state('about', {
@@ -36,7 +37,6 @@
 			};
 		});
 
-
 		app.directive("heroList", function() {
 			return {
 				restrict: 'E',
@@ -50,90 +50,49 @@
 
 		app.directive("equipList", function(){
 		    return {
-		      restrict: "E",
-		      templateUrl: "templates/equip-list.html",	      
-		      controller: function($scope){	 
-
-		    	 $scope.addItem = function(index) {
-	    	        items.push({
-	    	            id: $scope.items.length + 1,
-	    	            weapon: $scope.weapon,
-	    	            cost: $scope.cost
-	    	        });
-		    	 };	    	 
-		    	 $scope.deleteItem = function(index) {
-		    	     items.splice(index, 1);
-		    	 };	    	 
-		    	 
-		      },
-		      controllerAs: "eqCtrl"
+		      restrict: 'E',		      
+		      templateUrl: 'templates/equip-list.html',	      
+		      controller: 'equipCtrl'		      
 		    };
 		});
 		
 		app.directive("rulesList", function(){
 		    return {
-		      restrict: "E",
-		      templateUrl: "templates/rules-list.html",	      
-		      controller: function($scope){
-		      	/*
-		    	 $scope.rules = rules;   	    	 
-		    	 $scope.addRule = function(index) {
-		    		 rules.push({
-	    	            id: $scope.rules.length + 1,
-	    	            descr: $scope.descr
-	    	            
-	    	        });
-		    	 };	    	 
-		    	 $scope.deleteRule = function(index) {
-		    		 rules.splice(index, 1);
-		    	 };	    
-				*/
-		      },
-		      controllerAs: "ruleCtrl"
+		      restrict: 'E',		      
+		      templateUrl: 'templates/rules-list.html',	      
+		      controller: 'ruleCtrl'
 		    };
 		});
 
-	app.factory("heroes", function(){
-	    var heroes = [{
-	    	name: "Will", 
-	    	type: "slow", 
-	    	ws: 4,
-	    	rules: [{
-	    		id: 1,
-	    		descr: "rule1"
-	    	}],
-	    	items: [{ 
-	    		id: 1,
-	        	weapon: "Dagger",
-	        	cost: "Free"
-	        }]
-	    },{ name: "Laura",
-	    	type: "fast",
-	    	ws: 4,
-	    	rules: [{
-	    		id: 2,
-	    		descr: "rule2"
-	    	}],
-	    	items: [{
-	    		id: 1,
-	        	weapon: "Dagger",
-	        	cost: "Free"
-	    	}]
-	    }];
+		app.directive("warband", function() {
+			return {
+				restrict: 'E',
+				transclude: true,
+				templateUrl: 'templates/warband.html',
+				controller: 'wbCtrl'			
+			};
+		});
 
-	    return heroes;
-	});
+		app.directive("addHero", function() {
+			return {
+				restrict: 'E',
+				transclude: true,
+				templateUrl: 'templates/add-hero.html',
+				controller: 'addHeroCtrl'		
+			};
+		});
 	
 	
 	app.factory("warbands", ["$firebaseArray",
 	  function($firebaseArray) {
 	    // create a reference to the Firebase where we will store our data
-	    var randomRoomId = Math.round(Math.random() * 100000000);
-	    var ref = new Firebase("https://mordheim.firebaseio.com/warband/" + randomRoomId);
-	    // this uses AngularFire to create the synchronized array
+	    //var randomRoomId = Math.round(Math.random() * 100000000);
+	    //var ref = new Firebase("https://mordheim.firebaseio.com/warband/" + randomRoomId);
+	    var ref = new Firebase("https://mordheim.firebaseio.com/warband/");	    
 	    return $firebaseArray(ref);
 	  }
 	]);
+
 	/*
 	app.controller("WarbandCtrl", ["$scope", "warbands",
 	  // we pass our new chatMessages factory into the controller
@@ -145,7 +104,7 @@
 	    $scope.login = function() {
 	      $scope.authData = null;
 	      $scope.error = null;
-	      
+
 	      auth.$authAnonymously().then(function(authData) {	    	  
 	        $scope.authData = authData;	        
 	        console.log("authData ", authData);	        
@@ -174,50 +133,6 @@
 	  }
 	]);
 	*/
-
-	/*
-	app.controller("SampleCtrl", function($scope, $firebaseObject) {
-	  var ref = new Firebase("https://mordheim.firebaseio.com/data");	  
-	  var syncObject = $firebaseObject(ref);  
-	  syncObject.$bindTo($scope, "data");
-	});
-	*/	
-	/*
-	app.controller("WarbandController", ["$scope", "$firebaseArray",
-	    function($scope, $firebaseArray) {
-			var ref = new Firebase("https://mordheim.firebaseio.com/warband");
-	    }
-	]);
-	
-	app.controller('HeroController', function($scope){		
-		this.heroes = heroes;
-		this.nHero = nHero;		
-		this.updateHero = function(hero){
-			console.log('update hero on db ', hero);
-		};
-	});
-	
-	app.controller('ProfileController', function($scope, $firebaseObject){		
-	  var ref = new Firebase("https://mordheim.firebaseio.com/warband");
-	  // download the data into a local object
-	  var syncObject = $firebaseObject(ref);
-	  // synchronize the object with a three-way data binding
-	  // click on `index.html` above to see it used in the DOM!
-	  syncObject.$bindTo($scope, "warband");
-	  
-	  $scope.heroes = $firebaseArray(ref);
-	  
-		$scope.hero = nHero;	      
-		$scope.addHero = function(){	    	  
-	       if ($scope.hero.name) {
-	        	console.log($scope.hero);
-	            heroes.push($scope.hero);	
-	            $scope.hero = nHero;
-	       }
-	      };	      
-	});
-	*/
-
 	
 })();
 

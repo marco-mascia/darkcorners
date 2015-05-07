@@ -1,6 +1,6 @@
- <section>                      
+<section>                  
     <ul>
-    	<li ng-repeat="item in items" id="item{{item.id}}">
+    	<li ng-repeat="item in hero.items" id="item{{item.id}}">
     		{{item.weapon}} {{item.cost}}  
     		<button type="button" class="btn btn-xs" ng-click="deleteItem($index)">
   				Delete
@@ -9,8 +9,8 @@
     </ul>    
     <div class="form-inline">
         <div class="form-group">    
-            <input type="text" class="form-control" placeholder="Weapon" ng-model="weapon" />
-            <input type="text" class="form-control" placeholder="Cost" ng-model="cost" />
+            <input type="text" class="form-control" placeholder="Weapon" ng-model="item.weapon" />
+            <input type="text" class="form-control" placeholder="Cost" ng-model="item.cost" />
         </div>                                           
         <button class="btn btn-default" ng-click="addItem()">Add</button>                                         
     </div>

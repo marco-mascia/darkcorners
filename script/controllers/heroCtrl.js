@@ -1,6 +1,8 @@
 angular
 	.module('darkcorners')
 	.controller('heroCtrl', ['$scope', function($scope){		
-		$scope.name = "Current Name";
-		$scope.type = "Current Type";
+		$scope.save = function(){
+			console.log('heroCtrl save click');
+			alert('heroCtrl save click');
+		};
 	}]);

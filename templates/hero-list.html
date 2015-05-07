@@ -1,5 +1,16 @@
 <ul>
 	<li ng-repeat="hero in heroes">
-		{{hero.name}} : {{hero.type}} : {{hero.ws}}
+		<div class="media">
+		  <div class="media-left">
+		    <a href="#">
+		      <img class="media-object" src="" alt="">
+		    </a>
+		  </div>
+		  <div class="media-body">
+		  	<hero-box></hero-box>		  	
+		  </div>
+		</div>
+		<hr>
 	</li>
 </ul>
+<add-hero></add-hero>

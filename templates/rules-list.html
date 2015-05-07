@@ -1,6 +1,6 @@
- <section>                      
+<section>                      
     <ul>
-    	<li ng-repeat="rule in rules" id="rule{{rule.id}}">
+    	<li ng-repeat="rule in hero.rules" id="rule{{rule.id}}">
     		{{rule.descr}}
     		<button type="button" class="btn btn-xs" ng-click="deleteRule($index)">
   				Delete
@@ -9,7 +9,7 @@
     </ul>    
     <div class="form-inline">
         <div class="form-group">    
-            <input type="text" class="form-control" placeholder="Rule or Skill" ng-model="descr" />            
+            <input type="text" class="form-control" placeholder="Rule or Skill" ng-model="rule.descr" />            
         </div>                                           
         <button class="btn btn-default" ng-click="addRule()">Add</button>                                         
     </div>
